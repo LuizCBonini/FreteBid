@@ -1,0 +1,29 @@
+<header>
+    <img src="../../../../assets/imgs/icons/FreteRedução.svg" alt="Logo da FreteBid" class="logo">
+
+    <div class="menu-mobile" (click)="ShowMenu()">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+
+    <nav 
+        (click)="ShowMenu()"
+        [ngClass]="showMenu ? 'navbar' : 'navbar hiddenNavbar'"
+    >
+        <ul class="nav-list">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/">Como funciona</a>
+            </li>
+            <li>
+                <a href="/">Seja um franqueado</a>
+            </li>
+            <li class="rastrear-button">
+                <a href="/">Rastrear pedido</a>
+            </li>
+        </ul>
+    </nav>
+</header>
