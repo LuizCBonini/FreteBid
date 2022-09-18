@@ -10,6 +10,10 @@ header {
         margin-left: 47px;
     }
 
+    .logoDesktop {
+        display: none;
+    }
+
     .menu-mobile {
         display: flex;
         flex-direction: column;
@@ -23,6 +27,8 @@ header {
         }
     }
 
+
+    // ==============//============
 
     .navbar {
         display: flex;
@@ -58,5 +64,51 @@ header {
         transform: scale(.5);
         transition: .2s;
     }
-    
+
+}
+
+@media (min-width: 1228px) {
+    header {
+        height: 98px;
+        
+        .logo {
+            display: none;
+        }
+        
+        .logoDesktop {
+            display: block;
+            margin-left: 140px;
+        }
+
+        .menu-mobile {
+            display: none;
+        }
+        
+        .navbar {
+            display: flex;
+            opacity: 1;
+            position: static;
+            transform: scale(1);
+            justify-content: flex-end;
+            margin-right: 140px;
+            
+            .nav-list {
+                align-items: center;
+                column-gap: 32px;
+                flex-direction: row;
+
+                li a {
+                    font-size: 1.4rem;
+                    color: #ffffff;
+                }
+                .rastrear-button {
+                    border: 1px solid #ffffff;
+                    padding: 9px 22px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+
+    }
 }
